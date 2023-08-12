@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AulaTres.GridLayoutPage">
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height = "50"/>
+                <RowDefinition Height = "50"/>               
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Column 0, Row 0"
+                   WidthRequest="200"/>
+            <Label Grid.Column="1"
+                   Text="Column 1, Row 0"/>
+            <Label Grid.Row="1"
+                   Text="Column 0, Row 1"/>
+            <Label Grid.Column="1"
+                   Grid.Row="1"
+                   Text="Column 1, Row 1"/>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
